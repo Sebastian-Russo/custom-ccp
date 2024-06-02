@@ -1,0 +1,15 @@
+/*
+Babel is used to transpile the JavaScript code, making it compatible with older browsers.
+*/
+
+{
+    "plugins": [
+        ["@babel/plugin-transform-runtime", { "regenerator": true }] /* "@babel/plugin-transform-runtime" A plugin that enables the re-use of Babel's injected helper code to save on codesize. */
+        // ["@babel/plugin-transform-class-properties"] // included in "@babel/preset-env"
+    ],
+    "presets": [
+        "@babel/preset-env",            /* Allows you to use the latest JavaScript without needing to micromanage which syntax transforms (and optionally, browser polyfills) are needed by your target environment(s) */
+		"@babel/preset-typescript",     /* TypeScript */
+		"@babel/preset-react"           /* React */
+    ]
+}
