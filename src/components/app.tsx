@@ -1,10 +1,13 @@
 import 'app.css';
 
-function App() {
-    return (
+
+const App: React.FC = () => {
+
+
+        return (
         <div className='App'>
             <header className=''>
-                <img scr={logo} className='app-logo' alt="logo" />
+                {/* <img scr={logo} className='app-logo' alt="logo" /> */}
                 <p>
                     Custom CCP
                 </p>
@@ -13,4 +16,4 @@ function App() {
     )
 }
 
-export default App;
+export { App };
