@@ -1,0 +1,63 @@
+{
+    "compilerOptions": {
+        /* Basic Options */
+        "target": "ES6",                        /* You might choose to set a lower target if your code is deployed to older environments, or a higher target if your code is guaranteed to run in newer environments. The target setting changes which JS features are downleveled and which are left intact. ESNext value refers to the highest version your version of TypeScript supports. This setting should be used with caution, since it doesn’t mean the same thing between different TypeScript versions and can make upgrades less predictable. */
+        "module": "commonjs",                   /* "nodenext" for modern Node.js projects and preserve or esnext for code that will be bundled */
+        // "lib": [],                           /* [ES5, ES2015, ES6, ES2016, ES7, ES2017, ES2018, ES2019, ES2020, ES2021, ES2022, ESNext, DOM, WebWorker, ScriptHost], // TypeScript includes a default set of type definitions for built-in JS APIs (like Math), as well as type definitions for things found in browser environments (like document). TypeScript also includes APIs for newer JS features. You may want to change these for a few reasons: Your program doesn’t run in a browser, so you don’t want the "dom" type definitions Your runtime platform provides certain JavaScript API objects (maybe through polyfills), but doesn’t yet support the full syntax of a given ECMAScript version You have polyfills or native implementations for some, but not all, of a higher level ECMAScript version */
+        // "allowJS": true,                     /* Allow JavaScript files to be imported inside your project, instead of just .ts and .tsx files. */
+        // "checkJS": true,                     /* Works in tandem with allowJs. When checkJs is enabled then errors are reported in JavaScript files. This is the equivalent of including // @ts-check at the top of all JavaScript files which are included in your project. */
+        "jsx": "preserve",                      /* Controls how JSX constructs are emitted in JavaScript files. This only affects output of JS files that started in .tsx files. preserve: Emit .jsx files with the JSX unchanged. */
+        // "declaration": true,                 /* Generate .d.ts files for every TypeScript or JavaScript file inside your project. */
+        "declarationMap": true,                 /* Generates a source map for .d.ts files which map back to the original .ts source file. This will allow editors such as VS Code to go to the original .ts file when using features like Go to Definition. */
+        // "sourceMap": true,                   /* Enables the generation of sourcemap files. These files allow debuggers and other tools to display the original TypeScript source code when actually working with the emitted JavaScript files */
+        // "outFile": "./",                     /* If specified, all global (non-module) files will be concatenated into the single output file specified. */
+        "outDir": ".dist/",                     /* If specified, .js (as well as .d.ts, .js.map, etc.) files will be emitted into this directory. The directory structure of the original source files is preserved. */
+        "rootDir": "./src/",                    /* Specify the root directory of input files. Use to control the output directory structure with --outDir. */
+        "composite": true,                      /* The composite option enforces certain constraints which make it possible for build tools (including TypeScript itself, under --build mode) to quickly determine if a project has been built yet. */
+        // "incremental": true,                 /* Tells TypeScript to save information about the project graph from the last compilation to files stored on disk. This creates a series of .tsbuildinfo files in the same folder as your compilation output. They are not used by your JavaScript at runtime and can be safely deleted. */
+        // "tsBuildInfoFile": "./",             /* This setting lets you specify a file for storing incremental compilation information. */
+        // "removeComments": true,              /* Strips all comments from TypeScript files when converting into JavaScript. */
+        // "noEmit": true,                      /* Do not emit compiler output files like JavaScript source code, source-maps or declarations. This makes room for another tool like Babel, or swc to handle converting the TypeScript file to a file which can run inside a JavaScript environment. */
+        // "importHelpers": true,               /* Import emit helpers from 'tslib'. */
+        // "downlevelIteration": true,          /* Downleveling is TypeScript’s term for transpiling to an older version of JavaScript. */
+        // "isolatedModules": true,             /* Transpile each file as a separate module (similar to 'ts.transpileModule'). */
+        "resolveJsonModule": true,              /* Allows importing modules with a .json extension */
+
+        /* Strict Type-Checking Options */
+        "strict": true,                         /* Enable all strict type-checking options. */
+        // "noImplicitAny": true,               /* Raise error on expressions and declarations with an implied 'any' type. */
+        // "strictNullChecks": true,            /* When strictNullChecks is false, null and undefined are effectively ignored by the language. This can lead to unexpected errors at runtime. When strictNullChecks is true, null and undefined have their own distinct types and you’ll get a type error if you try to use them where a concrete value is expected. */
+        // "strictFunctionTypes": true,         /* Causes functions parameters to be checked more correctly. */
+        // "strictBindCallApply": true,         /* check that the built-in methods of functions call, bind, and apply are invoked with correct argument for the underlying function */
+        // "strictPropertyInitialization": true, /* Will raise an error when a class property was declared but not set in the constructor. */
+        // "noImplicitThis": true,              /* Raise error on ‘this’ expressions with an implied ‘any’ type. */
+        // "alwaysStrict": true,                /* Ensures that your files are parsed in the ECMAScript strict mode, and emit “use strict” for each source file. */
+
+        /* Additional Checks */
+        "noUnusedLocals": true,                 /* Report errors on unused locals. */
+        "noUnusedParameters": true,             /* Report errors on unused parameters. */
+        "noImplicitReturns": true,              /* Report error when not all code paths in function return a value. */
+        "noFallthroughCasesInSwitch": true,     /* Report errors for fallthrough cases in switch statement. */
+
+        /* Module Resolution Options */
+        // "moduleResolution": "bundler",       /* Specify the module resolution strategy. "node10" for require. "bundler" for "imports" and "exports". */
+        // "baseUrl": "./",                       /* Base directory to resolve non-absolute module names. */
+        // "paths": {},                           /* A series of entries which re-map imports to lookup locations relative to the 'baseUrl'. */
+        // "rootDirs": [],                        /* List of root folders whose combined content represents the structure of the project at runtime. */
+        // "typeRoots": [],                       /* List of folders to include type definitions from. */
+        // "types": [],                           /* Type declaration files to be included in compilation. */
+        "allowSyntheticDefaultImports": true,     /* Allow default imports from modules with no default export. This does not affect code emit, just typechecking. */
+        // "preserveSymlinks": true,              /* Do not resolve the real path of symlinks. */
+        // "esModuleInterop": true                /* Enables emit interoperability between CommonJS and ES Modules via creation of namespace objects for all imports. Implies 'allowSyntheticDefaultImports'. */
+
+        /* Source Map Options */
+        // "sourceRoot": "",                      /* Specify the location where debugger should locate TypeScript files instead of source locations. */
+        // "mapRoot": "",                         /* Specify the location where debugger should locate map files instead of generated locations. */
+        // "inlineSourceMap": true,               /* Emit a single file with source maps instead of having a separate file. */
+        // "inlineSources": true,                 /* Emit the source alongside the sourcemaps within a single file; requires '--inlineSourceMap' or '--sourceMap' to be set. */
+
+        /* Experimental Options */
+        "experimentalDecorators": true            /* Enables experimental support for ES7 decorators. Decorators are a proposal for extending JavaScript classes which is widely adopted among developers in transpiler environments, with broad interest in standardization. */
+        // "emitDecoratorMetadata": true,         /* Enables experimental support for emitting type metadata for decorators which works with the module reflect-metadata. */
+    }
+}
