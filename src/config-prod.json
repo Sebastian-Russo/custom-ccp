@@ -1,0 +1,14 @@
+{
+    "ccp_init": {
+      "ccpUrl": "",
+      "loginUrl": "",
+      "region": "",
+      "loginPopup": false,
+      "pageOptions": {
+        "enableAudioDeviceSettings": true
+      }
+    },
+    "api": "",
+    "version": "1.0.0"
+  }
+  
