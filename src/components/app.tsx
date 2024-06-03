@@ -1,5 +1,5 @@
-import 'app.css';
-
+import * as React from "react";
+// import * as RB from "rebass";
 
 const App: React.FC = () => {
 
