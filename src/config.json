@@ -2,7 +2,7 @@
     "ccp_init": {
       "ccpUrl": "",
       "loginUrl": "",
-      "region": "",
+      "region": "us-east-1",
       "loginPopup": false,
       "pageOptions": {
         "enableAudioDeviceSettings": true
