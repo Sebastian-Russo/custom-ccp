@@ -16,7 +16,6 @@ declare module "config.json" {
 	export default config;
 }
 
-
 //--- Utility Types ---\\
 
 // Extracts the type of the arguments of the function F.
